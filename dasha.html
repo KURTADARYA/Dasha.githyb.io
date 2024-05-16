@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+<title>Название страницы - отображается на вкладке браузера и в поиске</title>
+<style type="text/css">
+a{
+color: #000000;
+text-decoration: none;
+}
+html{
+background: #FFF8CC;
+min-height: 100%;
+font-family: Helvetica;
+display: flex;
+flex-direction: column;
+}
+body{
+margin: 0;
+padding: 0 15px;
+display: flex;
+flex-direction: column;
+flex: auto;
+}
+h1{
+margin-top: 0;
+}
+h1, p{
+color: #696969;
+}
+img{
+border: 0;
+}
+.header{
+width: 100%;
+min-width: 450px;
+max-width: 960px;
+margin: 0 auto 30px;
+padding: 30px 0 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+box-sizing: border-box;
+}
+.logo{
+font-size: 1.9rem;
+color: #000000;
+text-decoration: none;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex: none;
+align-items: center;
+background: #DEB887;
+width: 170px;
+height: 50px;
+}
+.nav{
+margin: -5px 0 0 -5px;
+display: flex;
+flex-wrap: wrap;
+}
+.nav-item{
+background: #DEB887;
+width: 130px;
+height: 50px;
+font-size: 1.5rem;
+color: #000000;
+text-decoration: none;
+display: flex;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+}
+.sqr{
+height: 300px;
+width: 300px;
+background: #DEB887;
+}
+
+.main{
+width: 100%;
+min-width: 460px;
+max-width: 960px;
+margin: auto;
+flex: auto;
+box-sizing: border-box;
+}
+.box{
+font-size: 1.25rem;
+line-height: 1.5;
+margin: 0 0 40px -50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.box-base{
+margin-left: 50px;
+flex: 1 0 430px;
+}
+.box-side{
+margin-left: 50px;
+font: none;
+}
+.box-img{
+max-width: 100%;
+height: auto;
+}
+.content{
+margin-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+}
+.banners{
+flex: 1 1 200px;
+}
+.banner{
+background: #DEB887;
+width: 100%;
+min-width: 100px;
+min-height: 300px;
+font-size: 3rem;
+color: #000000;
+margin: 0 0 30px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.posts{
+margin: 0 0 30px 60px;
+flex: 1 1 200px;
+}
+.comments{
+margin: 0 0 30px 30px;
+flex: 1 1 200px;
+}
+.comment{
+display: flex;
+}
+.comment-side{
+padding-right: 20px;
+flex: none;
+}
+.comment-base{
+flex: auto;
+}
+.comment-avatar{
+background: #AEB887;
+width: 50px;
+height: 50px;
+}
+.footer{
+background: #D2B48C;
+width: 100%;
+max-width: 960px;
+min-width: 460px;
+color: #000000;
+margin: auto;
+padding: 15px;
+box-sizing: border-box;
+text-align: center;
+}
+
+@media screen and  (max-width: 800px) {
+.banners{
+margin-left: -30px;
+display: flex;
+flex-basis: 100%;
+}
+.banner{
+margin-left: 30px;
+}
+.posts{
+margin-left: 0;
+}
+}
+@media screen and  (max-width: 600px) {
+.content{
+display: block;
+}
+.banners{
+margin: 0;
+display: block;
+}
+.banner{
+margin-left: 0;
+}
+.posts{
+margin: 0;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo">
+Путівничок
+</a>
+<nav class="nav">
+<a href="#posts" class="nav-item">ФОТО</a>
+<a href="#comments" class="nav-item">ОПИС</a>
+<a href="#footer" class="nav-item">КОНТАКТИ</a>
+</nav>
+
+</header>
+<main class="main">
+<div class="box">
+<div class="box-base">
+<h1>Гарні місця які можна відвідати з нами</h1>
+<p>Три країни які я рекомендую побачити!
+Подорож – це не лише можливість відпочити і набратись нових історій та вражень.
+
+Мандрівки допомагають вийти із зони комфорту, усвідомити насправді важливі у житті речі і навіть роблять вас впевненішими у собі.</p>
+</div>
+<div class="box-side">
+<div class="sqr">
+<img src="https://tvojarabota.pl/img/1200/3da19335c0dfd2c484d977ca16bfebd2.jpg" width="300" height="300">
+
+</div>
+</div>
+</div>
+<div class="content">
+<div class="banners">
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/c1/ff/28/caption.jpg?w=1400&h=1400&s=1" width="300" height="320">
+<img src="https://tour-to-italy.com/images/articles/16.jpg" width="300" height="300">
+<img src="https://www.avantage-travel.com.ua/image/catalog/%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D1%8B/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F.jpg" width="300" height="335">
+</div>
+<div class="posts"  id="posts">
+<div class="post">
+<h1>Канада #1</h1>
+<p>Канада – величезна північна країна, популярна як у туристів, так і в іммігрантів. І не дивно – канадський уряд видав чимало законів, покликаних залучити в країну кваліфікованих фахівців, що благотворно позначається на місцевій економіці. Утім, жителі сусідньої країни – США – все одно здебільшого ставляться до Канади зверхньо, вважаючи канадців провінціалами, що відстали від життя на кілька десятків років.</p>
+</div>
+<div class="post">
+<h1>Італія #2</h1>
+<p>Гаряча країна моди, пасти, вина, чоловіків та пристрасті. В Італії 20 регіонів, і, побувавши навіть у кількох із них, не можна заявити, що ти був в Італії, а тим паче знаєш її. Італію потрібно відкривати і відкривати. У кожному регіоні Італії своє життя, кухня, традиції, ідеали, мова і тим паче культура. У повсякденному житті італійців значно більше таємниць, ніж ви собі уявляєте. </p>
+</div>
+<div class="post">
+<h1>Японія #3</h1>
+<p>Японія – маленька країна, що розташувалася на гористих островах. Колись Японія століттями перебувала в ізоляції від решти світу і всіляко перешкоджала проникненню в ці краї європейців та їхньої культури, але відтоді багато змінилося. У наші дні Японія являє собою одну з найрозвиненіших і високотехнологічних держав. Більшість технічних новинок світу дарують саме японці. Ну і, звичайно ж, не можна обійти увагою самобутню японську культуру, яку обожнюють мільйони людей по всьому світу.</p>
+</div>
+</div>
+<div class="comments"  id="comments">
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+	<img src="https://i.pinimg.com/236x/7f/03/71/7f0371c60da2cdbbd7ce997143a16495.jpg" width="50" height="50">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Відгук #1</h1>
+<p>Ну сподобалось, але дороговато.</p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+	<img src="https://i.pinimg.com/736x/6b/b8/75/6bb875c8c2e7132657de4fced0198c60.jpg" width="50" height="50">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Відгук #2</h1>
+<p>Шикарно продумана поїздка, екскурсії були цікаві та пізнавальні, сподіваємось на наступні подорожі. </p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+	<img src="https://i.pinimg.com/236x/5f/03/10/5f0310152c8429dfbc441e99d5a8e33e.jpg" width="50" height="50">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Відгук #3</h1>
+<p>Було неймовірно цікаво але готель який вибрали був не найкращий. </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer"  id="footer">
+Можете знайти мене в Інстаграмі <a href="https://www.instagram.com/tomyshto_dora/"><img src="https://cdn-icons-png.flaticon.com/512/3621/3621464.png" width="20" height="20" alt="Інстаграм"></a>,<a href="https://uk-ua.facebook.com/"><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="18" height="18" alt="Фейсбук"></a>,<a href="https://web.telegram.org/k/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png" width="18" height="18" alt="Телеграм"></a> або за номером телефону 0668784532(Дар`я)
+</footer>
+</body>
+</html>
